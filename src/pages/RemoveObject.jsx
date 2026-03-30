@@ -1,10 +1,13 @@
-import { Scissors, Sparkles } from 'lucide-react';
-import React, { useState } from 'react';
+import { Scissors, Sparkles } from "lucide-react";
+import { useState } from "react";
+
+
 
 const RemoveObject = () => {
 
-    const [input, setInput] = useState('');
-    const [object, setObject] = useState('');
+  
+     const [input, setInput] = useState('');
+     const [object, setObject] = useState('');
         
         const onSubmitHandler = async (e) => {
                 e.preventDefault();
@@ -24,9 +27,9 @@ const RemoveObject = () => {
 
                 <input onChange={(e)=>setInput(e.target.files[0])} type='file' accept='image/*' className='outline-none border border-gray-300 rounded-md text-sm mt-2 px-3 p-2 w-full text-gray-600' required  />
 
-                 <p className='mt-6 text-sm font-medium'>Describe object name to remove</p>
+                 <p className='mt-6 text-sm font-medium'>Describe the object you want to remove</p>
 
-                <textarea onChange={(e)=>setObject(e.target.value)} value={object} rows={4}  className='outline-none border border-gray-300 rounded-md text-sm mt-2 px-3 p-2 w-full' placeholder='e.g., watch or spoon, Only single object name' required  />
+                <textarea onChange={(e)=>setObject(e.target.value)} value={object} rows={4}  className='outline-none border border-gray-300 rounded-md text-sm mt-2 px-3 p-2 w-full' placeholder='Describe the object you want to remove...' required  />
 
                     
                 <button className='flex justify-center items-center gap-2 w-full bg-gradient-to-r from-[#417DF6] to-[#8E37EB] text-white px-4 py-2 mt-6 text-sm rounded-lg cursor-pointer'>
