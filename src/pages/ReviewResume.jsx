@@ -3,14 +3,12 @@ import React, { useState } from 'react';
 
 const ReviewResume = () => {
 
-
     const [input, setInput] = useState('');
         
     const onSubmitHandler = async (e) => {
                 e.preventDefault();
          }
     
-
     return (
         <div className='h-full overflow-y-scroll p-6 flex items-start flex-wrap gap-4 text-slate-700'>
             {/* left col */}
@@ -32,7 +30,6 @@ const ReviewResume = () => {
                     <FileText className='w-5' />
                         Review Resume
                 </button>
-
 
 
             </form>
