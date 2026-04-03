@@ -20,7 +20,7 @@ const Community = () => {
 
     return (
         <div className='flex-1 h-full flex flex-col gap-4 p-6 '>
-            <p>creations</p>
+            <p className='text-2xl hover:text-blue-800'>creations</p>
 
             <div className='bg-white h-full w-full rounded-xl overflow-y-scroll'>
                 {creations.map((creation, index) => (
